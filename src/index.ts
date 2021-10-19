@@ -107,6 +107,7 @@ async function fixCommonJsImportsInFile(file: string, cjsFiles: string[]) {
     .split("\n")
     .map((l) => {
       replace.forEach((f) => {
+        l = l.replace(`'${f.slice(0, -4)}'`, `'${f}'`);
         l = l.replace(`'${f.slice(0, -3) + "js"}'`, `'${f}'`);
       });
       return l;
