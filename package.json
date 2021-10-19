@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A very simple task that automates generating code for JS/TS and Go from .proto files",
   "main": "dist/index.js",
+  "type": "module",
   "bin": {
     "protoc-task-helper": "dist/index.js"
   },
@@ -26,25 +27,25 @@
   "homepage": "https://github.com/graphql-editor/protoc-task-helper#readme",
   "devDependencies": {
     "@types/glob": "^7.1.4",
-    "@types/node": "^16.4.12",
-    "@types/rimraf": "^3.0.1",
-    "@types/yargs": "^17.0.2",
-    "@typescript-eslint/eslint-plugin": "^4.29.0",
-    "@typescript-eslint/eslint-plugin-tslint": "^4.29.0",
-    "@typescript-eslint/parser": "^4.29.0",
-    "eslint": "^7.32.0",
+    "@types/node": "^16.11.1",
+    "@types/rimraf": "^3.0.2",
+    "@types/yargs": "^17.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-prettier": "^3.4.0",
-    "glob": "^7.1.7",
-    "prettier": "^2.3.2",
-    "ts-node": "^10.1.0",
-    "typescript": "^4.3.5"
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "glob": "^7.2.0",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
   },
   "dependencies": {
+    "grpc_tools_node_protoc_ts": "^5.3.2",
     "grpc-tools": "^1.11.2",
-    "grpc_tools_node_protoc_ts": "^5.3.1",
     "rimraf": "^3.0.2",
-    "yargs": "^17.1.0"
+    "yargs": "^17.2.1"
   }
 }
