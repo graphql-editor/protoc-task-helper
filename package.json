@@ -1,6 +1,6 @@
 {
   "name": "protoc-task-helper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A very simple task that automates generating code for JS/TS and Go from .proto files",
   "main": "dist/index.js",
   "type": "module",
